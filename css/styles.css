@@ -72,8 +72,7 @@ h1 {
 }
 
 /* ========== Header Styles ========== */
-.page-header {
-    display: block;
+.page-header .container {
     border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -321,15 +320,26 @@ h1 {
 
 
 /* ==========  Portfolio ========== */
+.portfolio-section {
+    padding-bottom: 120px;
+}
 .portfolio-section ul{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+    
 }
+.portfolio-section li {
+border-bottom: 1px solid #E7E9FC;
+border-left: 1px solid #E7E9FC;
+border-right: 1px solid #E7E9FC;
+
+}
+
 .portfolio-item {
-    background: #fff;
-    border: 1px solid #C0C0C0
+    /* background: #fff;
+    border: 1px solid #C0C0C0 */
 }
 .portfolio-item-title {
     font-weight: 500;
@@ -352,8 +362,16 @@ h1 {
 
 
 /* ========== Footer ========== */
+.footer-container {
+display: block;
+max-width: 1158px;
+}
+
 .footer-section {
     background-color: #2e2f42;
+}
+.footer-section {
+    padding-top: 100px;
 }
 .logo-footer {
     font-weight: 700;
@@ -382,6 +400,8 @@ h1 {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+        padding: 16px 0 100px 0;
 }
 
 /* ========== / Footer ========== */
