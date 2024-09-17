@@ -369,6 +369,8 @@ max-width: 1158px;
 
 .footer-section {
     background-color: #2e2f42;
+    width: 1440px;
+        margin: auto;
 }
 .footer-section {
     padding-top: 100px;
