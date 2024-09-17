@@ -19,7 +19,20 @@ p {
 button {
     cursor: pointer;
     font-family: inherit;
+    all: unset;
+    display: inline-block;    
+    cursor: pointer;
+    background: none;    
+    border: none;    
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;  
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -53,7 +66,7 @@ h1 {
 }
 
 .container {
-    max-width: 1158px ;
+    max-width: 1440px ;
         padding:0 15px;
         margin: 0 auto;
 }
@@ -66,6 +79,7 @@ h1 {
 .header-container {
     display: flex;
     align-items: center;
+    max-width: 1158px;
 
 }
 .page-nav {
@@ -164,22 +178,33 @@ h1 {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 
 /* ========== Hero section ========== */
 .hero {
     background-color: #2e2f42;
+    padding: 0 0 188px 0;
 }
 
 .main-tittle {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #ffffff;
+    font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #ffffff;
+    padding: 188px 427px 48px 427px;
 }
-
+.order-button{
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+}
 .order-button {
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -188,7 +213,8 @@ h1 {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
 }
 
 .order-button:hover,
@@ -212,6 +238,23 @@ h1 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.benefit-section {
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.benefit-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 120px 0 120px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.benefit-section li {
+    flex-basis: 264px;
+}
 
 .benefits-item-title {
     font-weight: 500;
@@ -219,6 +262,7 @@ h1 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .benefits-item-text {
@@ -237,8 +281,23 @@ h1 {
     background-color: #F4F4FD;
 }
 
+.team-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
 .team-member {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+        padding: 0px 0px 32px 0px;
+        width: 264px;
+        height: 380px;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+            background: #ffffff;
 }
 .member-title {
     font-weight: 500;
@@ -262,8 +321,15 @@ h1 {
 
 
 /* ==========  Portfolio ========== */
+.portfolio-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
 .portfolio-item {
     background: #fff;
+    border: 1px solid #C0C0C0
 }
 .portfolio-item-title {
     font-weight: 500;
