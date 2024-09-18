@@ -16,22 +16,6 @@ p {
   
 }
 
-button {
-    cursor: pointer;
-    font-family: inherit;
-    all: unset;
-    display: inline-block;    
-    cursor: pointer;
-    background: none;    
-    border: none;    
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;  
-}
 
 img {
     display: block;
@@ -72,7 +56,7 @@ h1 {
 }
 
 /* ========== Header Styles ========== */
-.page-header .container {
+.page-header {
     border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -177,7 +161,6 @@ h1 {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-top: 120px;
     padding-bottom: 72px;
 }
 
@@ -185,24 +168,22 @@ h1 {
 /* ========== Hero section ========== */
 .hero {
     background-color: #2e2f42;
-    padding: 0 0 188px 0;
+    padding: 188px 0;
 }
 
 .main-tittle {
-    font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07143;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #ffffff;
-    padding: 188px 427px 48px 427px;
+    max-width: 496px;
+    margin: auto;
+    padding-bottom: 48px;
 }
 .order-button{
     display: block;
     margin: auto;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
+    border: none;
+    cursor: pointer;
 }
 .order-button {
     background-color: #4D5AE5;
@@ -237,7 +218,7 @@ h1 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.benefit-section {
+.benefit-section container {
     max-width: 1128px;
     margin: 0 auto;
 }
@@ -246,10 +227,12 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 120px 0 120px 0;
+    padding: 120px 0;
     list-style: none;
     margin: 0;
+    justify-content: center;
 }
+
 
 .benefit-section li {
     flex-basis: 264px;
@@ -278,8 +261,11 @@ h1 {
 
 .team-section {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
-
+.section-tittle {
+    margin-bottom: 72px
+}
 .team-section ul {
     display: flex;
     flex-wrap: wrap;
@@ -315,38 +301,43 @@ h1 {
     text-align: center;
     color: #434455;
 }
-/* ==========  Our team section ========== */
-
-
-
 /* ==========  Portfolio ========== */
 .portfolio-section {
-    padding-bottom: 120px;
+    padding: 120px 0; 
 }
-.portfolio-section ul{
+
+.portfolio-section ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 24px; 
     justify-content: center;
-    
-}
-.portfolio-section li {
-border-bottom: 1px solid #E7E9FC;
-border-left: 1px solid #E7E9FC;
-border-right: 1px solid #E7E9FC;
-
 }
 
 .portfolio-item {
-    /* background: #fff;
-    border: 1px solid #C0C0C0 */
+    width: 360px; 
+    background: #fff; 
+    border: 1px solid #E7E9FC; 
+    border-top: none;
+    border-radius: 0 0 4px 4px; 
+    padding-bottom: 32px;
+    box-sizing: border-box;
 }
+
+.portfolio-item img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-bottom: 1px solid #E7E9FC; 
+}
+
 .portfolio-item-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
+    padding: 32px 0 0 16px;
 }
 
 .portfolio-item-text {
@@ -355,9 +346,10 @@ border-right: 1px solid #E7E9FC;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 0 0 0 16px;
 }
-
 /* ========== / Portfolio ========== */
+
 
 
 
@@ -369,7 +361,6 @@ max-width: 1158px;
 
 .footer-section {
     background-color: #2e2f42;
-    width: 1440px;
         margin: auto;
 }
 .footer-section {
