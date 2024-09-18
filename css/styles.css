@@ -271,7 +271,6 @@ h1 {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    padding-bottom: 120px;
 }
 
 .team-member {
@@ -318,16 +317,17 @@ h1 {
     background: #fff; 
     border: 1px solid #E7E9FC; 
     border-top: none;
-    border-radius: 0 0 4px 4px; 
     padding-bottom: 32px;
     box-sizing: border-box;
+    
 }
 
 .portfolio-item img {
-    width: 100%; 
+    max-width: 360px;
     height: auto; 
-    display: block; 
-    border-bottom: 1px solid #E7E9FC; 
+    border-bottom: 1px solid #E7E9FC;
+    margin-left: -1px;
+    border: none;
 }
 
 .portfolio-item-title {
