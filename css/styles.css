@@ -390,7 +390,7 @@ max-width: 1158px;
 }
 .footer-section a {
     display: inline-block;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 .footer-section {
     background-color: #2e2f42;
