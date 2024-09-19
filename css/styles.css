@@ -8,6 +8,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 p {
     font-weight: 400;
     font-size: 16px;
@@ -15,7 +16,6 @@ p {
     letter-spacing: 0.02em;
   
 }
-
 
 img {
     display: block;
@@ -34,12 +34,12 @@ p {
     margin: 0;
 }
 
-
 body {
     font-family: "Roboto", sans-serif;
     background-color: #fff;
     color: #434455;
 }
+
 h1 {
     font-weight: 700;
     font-size: 56px;
@@ -51,20 +51,57 @@ h1 {
 
 .container {
     max-width: 1440px ;
-        padding:0 15px;
-        margin: 0 auto;
+    padding:0 15px;
+    margin: 0 auto;
 }
 
+/* ==== main styles for sections titles=== */
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px
+}
+
+/* ==== / main styles for sections titles=== */
+
+/* ========== main styles for cards titles======== */
+
+.item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.item-title {
+    padding-top: 32px;
+    text-align: center;
+}
+
+/* ========== / main styles for cards titles======== */
+
+
 /* ========== Header Styles ========== */
+
 .page-header {
     border-bottom: 1px solid #e7e9fc;
 }
+
 .header-container {
     display: flex;
     align-items: center;
     max-width: 1158px;
 
 }
+
 .page-nav {
     display: flex;
         justify-content: flex-start;
@@ -83,10 +120,12 @@ h1 {
     color: #4D5AE5;
     
 }
+
  .header-logo {
     padding: 24px 0;
         margin-right: 76px;
  }
+
 .logo-text {
     font-weight: 700;
     font-size: 18px;
@@ -95,6 +134,7 @@ h1 {
     text-transform: uppercase;
     color: #2e2f42;      
 }
+
 .nav-menu {
     display: flex;
         align-items: center;
@@ -108,6 +148,7 @@ h1 {
         flex-direction: row;
         gap: 40px;
 }
+
 .nav-link {
     display: block;
     font-weight: 500;
@@ -117,6 +158,7 @@ h1 {
     color: #2e2f42;
     padding: 24px 0;
 }
+
 .nav-menu-item .logo a:hover {
     color: #404bbf;
 }
@@ -130,6 +172,7 @@ h1 {
     font-style: normal;
     margin-left: auto;
 }
+
 .contacts-info {
     display: flex;
         align-items: center;
@@ -146,6 +189,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 .contacts-info a:hover,
 .contacts-info a:focus {
     color: #404bbf;
@@ -153,19 +197,9 @@ h1 {
 /* ========== / Header Styles ========== */
 
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    padding-bottom: 72px;
-}
-
 
 /* ========== Hero section ========== */
+
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
@@ -176,6 +210,7 @@ h1 {
     margin: auto;
     padding-bottom: 48px;
 }
+
 .order-button{
     display: block;
     margin: auto;
@@ -185,6 +220,7 @@ h1 {
     border: none;
     cursor: pointer;
 }
+
 .order-button {
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -201,11 +237,13 @@ h1 {
 .order-button:focus {
     background-color: #404BBF;
 }
+
 /* ========== / Hero section ========== */
 
 
 
 /* ==========  Benefits section ========== */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -218,41 +256,41 @@ h1 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.benefit-section container {
-    max-width: 1128px;
-    margin: 0 auto;
+
+.benefits-section {
+    padding: 120px 0;
 }
 
-.benefit-section ul {
+.benefits-container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.benefits-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 120px 0;
     list-style: none;
     margin: 0;
     justify-content: center;
 }
 
-
-.benefit-section li {
-    flex-basis: 264px;
+.benefits-cards .item-title {
+    text-align: left;
 }
 
-.benefits-item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding-bottom: 8px;
+.benefits-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
-.benefits-item-text {
+.item-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+
 /* ========== / Benefits section ========== */
 
 
@@ -263,9 +301,13 @@ h1 {
     background-color: #F4F4FD;
     padding: 120px 0;
 }
-.section-tittle {
-    margin-bottom: 72px
+
+.team-container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
 }
+
 .team-section ul {
     display: flex;
     flex-wrap: wrap;
@@ -274,23 +316,14 @@ h1 {
 }
 
 .team-member {
-    background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-        padding: 0px 0px 32px 0px;
-        width: 264px;
-        height: 380px;
-        border-radius: 0 0 4px 4px;
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-            background: #ffffff;
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    height: 380px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #ffffff;
 }
-.member-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-}
+
 
 .member-role {
     font-weight: 400;
@@ -300,21 +333,31 @@ h1 {
     text-align: center;
     color: #434455;
 }
+
+/* ==========  /Our team section ========== */
+
+
+
 /* ==========  Portfolio ========== */
+
 .portfolio-section {
     padding: 120px 0; 
 }
 
-.portfolio-section ul {
+.portfolio-container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
+}
+.portfolio-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 24px; 
-    justify-content: center;
 }
 
 .portfolio-item {
     width: 360px; 
-    background: #fff; 
+    background: #ffffff; 
     border: 1px solid #E7E9FC; 
     border-top: none;
     padding-bottom: 32px;
@@ -330,33 +373,25 @@ h1 {
     border: none;
 }
 
-.portfolio-item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+.portfolio-cards .item-title {
     margin-bottom: 8px;
     padding: 32px 0 0 16px;
+    text-align: left;
 }
 
-.portfolio-item-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+.portfolio-cards .item-text {
     padding: 0 0 0 16px;
 }
+
 /* ========== / Portfolio ========== */
 
 
-
-
 /* ========== Footer ========== */
+
 .footer-container {
 display: block;
 max-width: 1158px;
+padding: 100px 0;
 }
 
 .footer-section {
@@ -394,7 +429,7 @@ max-width: 1158px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-        padding: 16px 0 100px 0;
+    padding: 16px 0 100px 0;
 }
 
 /* ========== / Footer ========== */
