@@ -78,12 +78,15 @@ h1 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    text-align: center;
+        margin-bottom: 8px;
 }
 
-.item-title {
-    padding-top: 32px;
-    text-align: center;
+.item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /* ========== / main styles for cards titles======== */
@@ -284,13 +287,6 @@ h1 {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
-.item-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
 /* ========== / Benefits section ========== */
 
 
@@ -324,7 +320,9 @@ h1 {
     background: #ffffff;
 }
 
-
+.member-title {
+    padding: 32px 0;
+}
 .member-role {
     font-weight: 400;
     font-size: 16px;
@@ -352,15 +350,13 @@ h1 {
 .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px; 
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-item {
     width: 360px; 
     background: #ffffff; 
-    border: 1px solid #E7E9FC; 
-    border-top: none;
-    padding-bottom: 32px;
     box-sizing: border-box;
     
 }
@@ -375,14 +371,14 @@ h1 {
 
 .portfolio-cards .item-title {
     margin-bottom: 8px;
-    padding: 32px 0 0 16px;
     text-align: left;
 }
 
-.portfolio-cards .item-text {
-    padding: 0 0 0 16px;
+.app-title {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+        border-top: none;
 }
-
 /* ========== / Portfolio ========== */
 
 
@@ -391,16 +387,16 @@ h1 {
 .footer-container {
 display: block;
 max-width: 1158px;
-padding: 100px 0;
 }
-
+.footer-section a {
+    display: inline-block;
+}
 .footer-section {
     background-color: #2e2f42;
-        margin: auto;
+    margin: auto;
+    padding: 100px 0;
 }
-.footer-section {
-    padding-top: 100px;
-}
+
 .logo-footer {
     font-weight: 700;
     font-size: 18px;
@@ -429,7 +425,7 @@ padding: 100px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    padding: 16px 0 100px 0;
+    padding-top: 16px;
 }
 
 /* ========== / Footer ========== */
